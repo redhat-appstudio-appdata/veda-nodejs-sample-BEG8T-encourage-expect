@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-o2gc
+  namespace: veda2019subs-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:3b8b857d601aa560d3b54d829c09512b28276a361be6be224762bb7ee15d6699
+        name: my-nodejs
+        resources: {}
+status: {}
