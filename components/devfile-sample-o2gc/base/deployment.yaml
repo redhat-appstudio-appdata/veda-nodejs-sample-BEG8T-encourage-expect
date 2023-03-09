@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-o2gc
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:BEG8T-devfile-sample-o2gc
+      - image: quay.io/redhat-appstudio/user-workload@sha256:3b8b857d601aa560d3b54d829c09512b28276a361be6be224762bb7ee15d6699
         name: my-nodejs
         ports:
         - containerPort: 3001
